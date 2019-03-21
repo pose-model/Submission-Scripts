@@ -1,4 +1,11 @@
 #/bin/bash
+#SBATCH --nodes=1
+#SBATCH --tasks-per-node=1
+#SBATCH --cpus-per-task=24
+#SBATCH --partition=haswell64
+#SBATCH --time=00:15:00
+#SBATCH --exclusive
+#SBATCH -J my_job
 
 gettime () 
 {
